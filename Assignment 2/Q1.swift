@@ -25,9 +25,34 @@ class Q1: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource{
         return genderArray[row]
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedGender = genderArray[pickerView.selectedRow(inComponent: 0)];
+    }
+    
+    @IBOutlet weak var usernamelbl: UITextField!
+    @IBOutlet weak var pwdlbl: UITextField!
+    @IBOutlet weak var addresslbl: UITextField!
+    @IBOutlet weak var agelbl: UITextField!
+    @IBOutlet weak var resultlbl: UILabel!
+    
+    
+    
+    @IBOutlet weak var resusername: UILabel!
+    @IBOutlet weak var respwd: UILabel!
+    @IBOutlet weak var resaddress: UILabel!
+    @IBOutlet weak var resgender: UILabel!
+    @IBOutlet weak var resage: UILabel!
+    
+    @IBAction func submitevent(_ sender: Any) {
+        resusername.text = "Username : \(usernamelbl.text!)";
+        respwd.text = "Password : \(pwdlbl.text!)";
+        resaddress.text = "Username : \(usernamelbl.text!)";
+        resgender.text = "Gender : \(selectedGender)";
+        resage.text = "Age : \(agelbl.text!)";
     }
 }
