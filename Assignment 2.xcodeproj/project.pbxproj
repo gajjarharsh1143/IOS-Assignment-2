@@ -15,6 +15,8 @@
 		3A2286562B6F75B700B29754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2286542B6F75B700B29754 /* LaunchScreen.storyboard */; };
 		3A2286602B6F762C00B29754 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A22865F2B6F762C00B29754 /* libsqlite3.0.tbd */; };
 		3A2286632B6F7A6100B29754 /* Q1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2286622B6F7A6100B29754 /* Q1.swift */; };
+		3A65C64A2B7392ED0000638A /* Q4-(1).swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65C6492B7392ED0000638A /* Q4-(1).swift */; };
+		3A65C64D2B7393140000638A /* Q4-(2).swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65C64C2B7393140000638A /* Q4-(2).swift */; };
 		3AEA1F6A2B737E8C004BC86C /* Q2-(1).swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEA1F692B737E8C004BC86C /* Q2-(1).swift */; };
 		3AEA1F6D2B737ED6004BC86C /* Q2-(2).swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEA1F6C2B737ED6004BC86C /* Q2-(2).swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,8 @@
 		3A2286572B6F75B700B29754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A22865F2B6F762C00B29754 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		3A2286622B6F7A6100B29754 /* Q1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q1.swift; sourceTree = "<group>"; };
+		3A65C6492B7392ED0000638A /* Q4-(1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q4-(1).swift"; sourceTree = "<group>"; };
+		3A65C64C2B7393140000638A /* Q4-(2).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q4-(2).swift"; sourceTree = "<group>"; };
 		3AEA1F692B737E8C004BC86C /* Q2-(1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q2-(1).swift"; sourceTree = "<group>"; };
 		3AEA1F6C2B737ED6004BC86C /* Q2-(2).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q2-(2).swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +80,8 @@
 				3A2286622B6F7A6100B29754 /* Q1.swift */,
 				3AEA1F692B737E8C004BC86C /* Q2-(1).swift */,
 				3AEA1F6C2B737ED6004BC86C /* Q2-(2).swift */,
+				3A65C6492B7392ED0000638A /* Q4-(1).swift */,
+				3A65C64C2B7393140000638A /* Q4-(2).swift */,
 			);
 			path = "Assignment 2";
 			sourceTree = "<group>";
@@ -160,7 +166,9 @@
 			files = (
 				3A22864E2B6F75B200B29754 /* ViewController.swift in Sources */,
 				3A2286632B6F7A6100B29754 /* Q1.swift in Sources */,
+				3A65C64A2B7392ED0000638A /* Q4-(1).swift in Sources */,
 				3AEA1F6D2B737ED6004BC86C /* Q2-(2).swift in Sources */,
+				3A65C64D2B7393140000638A /* Q4-(2).swift in Sources */,
 				3AEA1F6A2B737E8C004BC86C /* Q2-(1).swift in Sources */,
 				3A22864A2B6F75B200B29754 /* AppDelegate.swift in Sources */,
 				3A22864C2B6F75B200B29754 /* SceneDelegate.swift in Sources */,
