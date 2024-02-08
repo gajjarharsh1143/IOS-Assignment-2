@@ -18,6 +18,7 @@
 		3AD3169A2B747AB10027D043 /* Q5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD316992B747AB10027D043 /* Q5.swift */; };
 		3AEA1F6A2B737E8C004BC86C /* Q2-(1).swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEA1F692B737E8C004BC86C /* Q2-(1).swift */; };
 		3AEA1F6D2B737ED6004BC86C /* Q2-(2).swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEA1F6C2B737ED6004BC86C /* Q2-(2).swift */; };
+		BECD285A2B7511C900026537 /* Q3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD28592B7511C900026537 /* Q3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3AD316992B747AB10027D043 /* Q5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q5.swift; sourceTree = "<group>"; };
 		3AEA1F692B737E8C004BC86C /* Q2-(1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q2-(1).swift"; sourceTree = "<group>"; };
 		3AEA1F6C2B737ED6004BC86C /* Q2-(2).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q2-(2).swift"; sourceTree = "<group>"; };
+		BECD28592B7511C900026537 /* Q3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				3AEA1F692B737E8C004BC86C /* Q2-(1).swift */,
 				3AEA1F6C2B737ED6004BC86C /* Q2-(2).swift */,
 				3AD316992B747AB10027D043 /* Q5.swift */,
+				BECD28592B7511C900026537 /* Q3.swift */,
 			);
 			path = "Assignment 2";
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				3AEA1F6A2B737E8C004BC86C /* Q2-(1).swift in Sources */,
 				3A22864A2B6F75B200B29754 /* AppDelegate.swift in Sources */,
 				3A22864C2B6F75B200B29754 /* SceneDelegate.swift in Sources */,
+				BECD285A2B7511C900026537 /* Q3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
