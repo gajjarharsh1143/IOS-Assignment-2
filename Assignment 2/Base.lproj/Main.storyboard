@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mW7-Ib-fs6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mW7-Ib-fs6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -138,7 +137,6 @@
                                 <rect key="frame" x="29" y="325" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="1"/>
                                 <connections>
                                     <action selector="b1click:" destination="KDS-2d-YdS" eventType="touchDown" id="Aqv-av-Okh"/>
                                 </connections>
@@ -147,7 +145,6 @@
                                 <rect key="frame" x="124" y="325" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="2"/>
                                 <connections>
                                     <action selector="b2click:" destination="KDS-2d-YdS" eventType="touchDown" id="zKQ-Dw-6AL"/>
                                 </connections>
@@ -156,7 +153,6 @@
                                 <rect key="frame" x="218" y="325" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="3"/>
                                 <connections>
                                     <action selector="b3click:" destination="KDS-2d-YdS" eventType="touchDown" id="flC-sB-adw"/>
                                 </connections>
@@ -165,7 +161,6 @@
                                 <rect key="frame" x="29" y="418" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="4"/>
                                 <connections>
                                     <action selector="b4click:" destination="KDS-2d-YdS" eventType="touchDown" id="nDI-Bc-V36"/>
                                 </connections>
@@ -174,7 +169,6 @@
                                 <rect key="frame" x="124" y="418" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="5"/>
                                 <connections>
                                     <action selector="b5click:" destination="KDS-2d-YdS" eventType="touchDown" id="RH8-EW-n1N"/>
                                 </connections>
@@ -183,7 +177,6 @@
                                 <rect key="frame" x="218" y="418" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="6"/>
                                 <connections>
                                     <action selector="b6click:" destination="KDS-2d-YdS" eventType="touchDown" id="kdg-Gg-kCi"/>
                                 </connections>
@@ -192,7 +185,6 @@
                                 <rect key="frame" x="29" y="509" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="7"/>
                                 <connections>
                                     <action selector="b7click:" destination="KDS-2d-YdS" eventType="touchDown" id="cIT-cb-OqT"/>
                                 </connections>
@@ -201,7 +193,6 @@
                                 <rect key="frame" x="124" y="509" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="8"/>
                                 <connections>
                                     <action selector="b8click:" destination="KDS-2d-YdS" eventType="touchDown" id="JtX-I4-fza"/>
                                 </connections>
@@ -210,7 +201,6 @@
                                 <rect key="frame" x="218" y="509" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="9"/>
                                 <connections>
                                     <action selector="b9click:" destination="KDS-2d-YdS" eventType="touchDown" id="hfC-Cx-o3f"/>
                                 </connections>
@@ -219,7 +209,6 @@
                                 <rect key="frame" x="29" y="601" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="0"/>
                                 <connections>
                                     <action selector="b0click:" destination="KDS-2d-YdS" eventType="touchDown" id="ybc-ww-BK0"/>
                                 </connections>
@@ -228,7 +217,6 @@
                                 <rect key="frame" x="123" y="601" width="76" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="C"/>
                                 <connections>
                                     <action selector="clearbtn:" destination="KDS-2d-YdS" eventType="touchDown" id="PPg-KE-xki"/>
                                 </connections>
@@ -237,7 +225,6 @@
                                 <rect key="frame" x="311" y="325" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="+"/>
                                 <connections>
                                     <action selector="sumbtn:" destination="KDS-2d-YdS" eventType="touchDown" id="t0J-a2-svQ"/>
                                 </connections>
@@ -246,7 +233,6 @@
                                 <rect key="frame" x="311" y="418" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="-"/>
                                 <connections>
                                     <action selector="subbtn:" destination="KDS-2d-YdS" eventType="touchDown" id="Mql-xc-aP3"/>
                                 </connections>
@@ -255,7 +241,6 @@
                                 <rect key="frame" x="311" y="509" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="X"/>
                                 <connections>
                                     <action selector="mulbtn:" destination="KDS-2d-YdS" eventType="touchDown" id="e7C-GH-oPC"/>
                                 </connections>
@@ -264,7 +249,6 @@
                                 <rect key="frame" x="311" y="601" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="/"/>
                                 <connections>
                                     <action selector="divbtn:" destination="KDS-2d-YdS" eventType="touchDown" id="g8L-Gp-wrS"/>
                                 </connections>
@@ -273,7 +257,6 @@
                                 <rect key="frame" x="218" y="601" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="="/>
                                 <connections>
                                     <action selector="ansbtn:" destination="KDS-2d-YdS" eventType="touchDown" id="pdT-at-ysb"/>
                                 </connections>
@@ -536,7 +519,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mW7-Ib-fs6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xNu-oj-PPZ">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -553,7 +536,7 @@
             <objects>
                 <viewController id="Wed-VI-hcU" customClass="Q4__1_" customModule="Assignment_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xHQ-tF-3Mb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Screen 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTC-HK-IzQ">
@@ -586,6 +569,14 @@
                                     <segue destination="fM4-kG-Z8I" kind="show" id="jCg-6F-zD1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moving from main screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9co-It-mr4">
+                                <rect key="frame" x="20" y="607" width="374" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lzk-CY-4zh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -594,14 +585,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pwI-lV-M5Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1165" y="696"/>
+            <point key="canvasLocation" x="-1165.217391304348" y="695.75892857142856"/>
         </scene>
         <!--Question 4 | S2-->
         <scene sceneID="OSg-6M-TsV">
             <objects>
-                <viewController id="aCg-tq-mtE" sceneMemberID="viewController">
+                <viewController id="aCg-tq-mtE" customClass="Q4__2_" customModule="Assignment_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AZc-Oq-VXe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Screen 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4V-6j-aHd">
@@ -634,6 +625,14 @@
                                     <segue destination="fM4-kG-Z8I" kind="show" id="7Zi-Wj-sXW"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moving from main screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oF8-GN-8QT">
+                                <rect key="frame" x="18" y="579" width="374" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S6q-aB-9O0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -775,9 +774,9 @@
         <!--Question 4 | S3-->
         <scene sceneID="fwj-z6-2av">
             <objects>
-                <viewController id="fM4-kG-Z8I" sceneMemberID="viewController">
+                <viewController id="fM4-kG-Z8I" customClass="Q4__3_" customModule="Assignment_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QUH-im-vRm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnS-TB-zGr">
@@ -810,6 +809,14 @@
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moving from main screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LN-EH-zYE">
+                                <rect key="frame" x="20" y="584" width="374" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GRw-bu-F9C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -822,9 +829,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jCg-6F-zD1"/>
-        <segue reference="m5d-KJ-FeU"/>
-        <segue reference="Q6o-4k-Dul"/>
+        <segue reference="7Zi-Wj-sXW"/>
+        <segue reference="vbB-aD-Gs3"/>
+        <segue reference="zMM-1E-9MZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
@@ -834,16 +841,16 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

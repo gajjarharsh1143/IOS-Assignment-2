@@ -1,5 +1,5 @@
 //
-//  Q4-(2).swift
+//  Q4-(1).swift
 //  Assignment 2
 //
 //  Created by HPG on 10/02/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Q4__2_: UIViewController {
+class Q4__1_: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
