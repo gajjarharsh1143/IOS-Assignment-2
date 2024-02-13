@@ -9,21 +9,18 @@ import UIKit
 
 class Q4__2_: UIViewController {
 
+    var S2var:String = ""
+    
+    @IBOutlet weak var S2lbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        S2lbl.text = S2var;
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        let obj2 = segue.destination as! Q4__3_
+        obj2.S3var = "Moving from screen 2"
     }
-    */
-
 }

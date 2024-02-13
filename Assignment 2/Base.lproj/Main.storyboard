@@ -655,6 +655,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Question 4 | S2" id="q5G-H9-OhE"/>
+                    <connections>
+                        <outlet property="S2lbl" destination="oF8-GN-8QT" id="Zew-cz-aGC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tBk-Di-rSB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -839,6 +842,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Question 4 | S3" id="F1Q-gF-Fk4"/>
+                    <connections>
+                        <outlet property="S3lbl" destination="2LN-EH-zYE" id="bAH-HS-3wD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6yz-Lm-ZAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

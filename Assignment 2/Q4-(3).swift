@@ -9,10 +9,13 @@ import UIKit
 
 class Q4__3_: UIViewController {
 
+    var S3var:String = ""
+    
+    @IBOutlet weak var S3lbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        S3lbl.text = S3var;
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
