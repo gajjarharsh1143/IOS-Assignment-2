@@ -12,6 +12,7 @@ class Q4__2_: UIViewController {
     var S2var:String = ""
     
     @IBOutlet weak var S2lbl: UILabel!
+    @IBOutlet weak var s2data: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,8 +20,13 @@ class Q4__2_: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let obj2 = segue.destination as! Q4__3_
-        obj2.S3var = "Moving from screen 2"
+        if segue.identifier == "s2to3" {
+            let obj1 = segue.destination as! Q4__3_
+            obj1.S3var = "Moving from \(s2data.text!)"
+        }
+        else if segue.identifier == "s2to1"{
+            let obj1 = segue.destination as! Q4__1_
+            obj1.S1var = "Moving from \(s2data.text!)"
+        }
     }
 }

@@ -67,5 +67,12 @@ class ViewController: UIViewController {
         Q6btn.layer.masksToBounds = false
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "smainto1" {
+            let obj1 = segue.destination as! Q4__1_
+            obj1.S1var = "Moving from Main screen"
+        }
+    }
+    
 }
 

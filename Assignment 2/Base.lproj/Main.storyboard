@@ -67,7 +67,7 @@
                                     <color key="titleColor" systemColor="systemGray6Color"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Wed-VI-hcU" kind="show" id="Q6o-4k-Dul"/>
+                                    <segue destination="Wed-VI-hcU" kind="show" identifier="smainto1" id="Q6o-4k-Dul"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EW-8h-6z9">
@@ -572,7 +572,7 @@
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <state key="normal" title="Move to Screen 2"/>
                                 <connections>
-                                    <segue destination="aCg-tq-mtE" kind="show" id="m5d-KJ-FeU"/>
+                                    <segue destination="aCg-tq-mtE" kind="show" identifier="s1to2" id="m5d-KJ-FeU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7T3-qF-vOd">
@@ -583,7 +583,7 @@
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <state key="normal" title="Move to Screen 3"/>
                                 <connections>
-                                    <segue destination="fM4-kG-Z8I" kind="show" id="jCg-6F-zD1"/>
+                                    <segue destination="fM4-kG-Z8I" kind="show" identifier="s1to3" id="jCg-6F-zD1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moving from main screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9co-It-mr4">
@@ -599,10 +599,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Question 4 | S1" id="g36-Bg-9L1"/>
+                    <connections>
+                        <outlet property="S1lbl" destination="9co-It-mr4" id="yBq-YI-wfk"/>
+                        <outlet property="s1data" destination="MTC-HK-IzQ" id="bLH-iM-ua1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pwI-lV-M5Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1165.217391304348" y="695.75892857142856"/>
+            <point key="canvasLocation" x="-1165" y="696"/>
         </scene>
         <!--Question 4 | S2-->
         <scene sceneID="OSg-6M-TsV">
@@ -628,7 +632,7 @@
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <state key="normal" title="Move to Screen 1"/>
                                 <connections>
-                                    <segue destination="Wed-VI-hcU" kind="show" id="2Qz-Jo-Swc"/>
+                                    <segue destination="Wed-VI-hcU" kind="show" identifier="s2to1" id="2Qz-Jo-Swc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3g-is-meE">
@@ -639,7 +643,7 @@
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <state key="normal" title="Move to Screen 3"/>
                                 <connections>
-                                    <segue destination="fM4-kG-Z8I" kind="show" id="7Zi-Wj-sXW"/>
+                                    <segue destination="fM4-kG-Z8I" kind="show" identifier="s2to3" id="7Zi-Wj-sXW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moving from main screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oF8-GN-8QT">
@@ -657,11 +661,12 @@
                     <navigationItem key="navigationItem" title="Question 4 | S2" id="q5G-H9-OhE"/>
                     <connections>
                         <outlet property="S2lbl" destination="oF8-GN-8QT" id="Zew-cz-aGC"/>
+                        <outlet property="s2data" destination="k4V-6j-aHd" id="UIp-H9-imG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tBk-Di-rSB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1165" y="1366"/>
+            <point key="canvasLocation" x="-1165" y="1367"/>
         </scene>
         <!--Question 5-->
         <scene sceneID="4aS-2l-5ee">
@@ -807,7 +812,7 @@
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <state key="normal" title="Move to Screen 1"/>
                                 <connections>
-                                    <segue destination="Wed-VI-hcU" kind="show" id="zMM-1E-9MZ"/>
+                                    <segue destination="Wed-VI-hcU" kind="show" identifier="s3to1" id="zMM-1E-9MZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neX-Yd-tup">
@@ -818,7 +823,7 @@
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <state key="normal" title="Move to Screen 2"/>
                                 <connections>
-                                    <segue destination="aCg-tq-mtE" kind="show" id="vbB-aD-Gs3"/>
+                                    <segue destination="aCg-tq-mtE" kind="show" identifier="s3to2" id="vbB-aD-Gs3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Screen 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYE-OO-j3p">
@@ -844,11 +849,12 @@
                     <navigationItem key="navigationItem" title="Question 4 | S3" id="F1Q-gF-Fk4"/>
                     <connections>
                         <outlet property="S3lbl" destination="2LN-EH-zYE" id="bAH-HS-3wD"/>
+                        <outlet property="s3data" destination="kYE-OO-j3p" id="65B-Ji-klL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6yz-Lm-ZAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-465" y="1365"/>
+            <point key="canvasLocation" x="-465" y="1367"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -864,16 +870,16 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
