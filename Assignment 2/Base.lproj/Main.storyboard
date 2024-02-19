@@ -772,8 +772,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Question 5" id="zI9-vr-bfa"/>
                     <connections>
-                        <outlet property="emaillbl" destination="cFG-Ci-oj0" id="Sgz-b8-2Tu"/>
+                        <outlet property="emaillbl" destination="cFG-Ci-oj0" id="Y7m-tX-uNH"/>
                         <outlet property="namelbl" destination="WuP-gC-zVf" id="99O-gF-ucj"/>
+                        <outlet property="pwdlbl" destination="g5Z-ZW-01I" id="mxQ-hT-zqA"/>
+                        <outlet property="semlbl" destination="oJA-s9-Qod" id="pj5-pT-1kL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0aP-oz-cId" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -858,9 +860,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7Zi-Wj-sXW"/>
-        <segue reference="vbB-aD-Gs3"/>
-        <segue reference="zMM-1E-9MZ"/>
+        <segue reference="jCg-6F-zD1"/>
+        <segue reference="m5d-KJ-FeU"/>
+        <segue reference="2Qz-Jo-Swc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
@@ -870,16 +872,16 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

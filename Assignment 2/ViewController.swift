@@ -76,3 +76,10 @@ class ViewController: UIViewController {
     
 }
 
+//1. Create a screen that has input boxes for User Name, Password, Address, Gender, Age (numeric) and a Submit button. On clicking the submit button, print all the data below the Submit Button
+//2. Design an iOS application to create page with two text box and one Button and pass the combined text box Values from one screen to label on second screen.
+//3. Develop an iOS application for Simple calculator with single label or text box.
+//4. Develop an iOS application for multiple screens with text navigation.
+//5. Create a user registration application that stores the user details in a SQLite database table (assume appropriate table fields).
+//6. Create a employee management application that that performs CRUD operations in a SQLite database table (assume appropriate table fields)
+

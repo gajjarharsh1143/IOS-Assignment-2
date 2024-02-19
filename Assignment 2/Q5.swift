@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import SQLite3
+@available(iOS 16.0, *)
 
 class Q5: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource  {
 
@@ -31,14 +33,39 @@ class Q5: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource  {
         selectedCourse = courseArray[pickerView.selectedRow(inComponent: 1)]
     }
     
+    var db_path : String = "myDB.sqlit";
+    var db_pointer : OpaquePointer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let file_path = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appending(path: db_path)
+        
+        if(sqlite3_open(file_path.path, &db_pointer) != SQLITE_OK){
+            print("Error in Database Connection");
+        }
+        else{
+            print("Database Connected");
+        }
+        
+        let createTB = "CREATE TABLE IF NOT EXISTS userTB(name TEXT, email TEXT PRIMARY KEY, password TEXT, course TEXT,sem INTEGER, dob TEXT)";
+        var createSTMT:OpaquePointer? = nil;
+        
+//        if(sqlite3_prepare_v2(db_pointer, createTB, -1, createSTMT, nil) == SQLITE_DONE){
+//            if()
+//        }
+//        else{
+//            print("Error in Statement");
+//        }
 
     }
     
     
     @IBOutlet weak var namelbl: UITextField!
     @IBOutlet weak var emaillbl: UITextField!
+    @IBOutlet weak var pwdlbl: UITextField!
+    @IBOutlet weak var semlbl: UITextField!
+    
     @IBAction func registerClick(_ sender: Any) {
     }
 }
