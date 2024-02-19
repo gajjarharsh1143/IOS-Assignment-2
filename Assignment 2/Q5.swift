@@ -13,6 +13,9 @@ class Q5: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource  {
 
     var courseArray:[String] = ["IT","ICT"];
     var selectedCourse:String = "";
+    var selectedDOB:String = "";
+    
+    let tableName = "userTB";
     
 //    var semArray:[Int8] = [1,2,3,4,5,6,7,8,9,10];
 //    var selectedSem:Int8 = 1;
@@ -29,8 +32,9 @@ class Q5: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource  {
         return courseArray[row]
     }
     
+    @IBOutlet weak var pickerval: UIPickerView!
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectedCourse = courseArray[pickerView.selectedRow(inComponent: 1)]
+        selectedCourse = courseArray[pickerView.selectedRow(inComponent: 0)]
     }
     
     var db_path : String = "myDB.sqlit";
@@ -48,18 +52,36 @@ class Q5: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource  {
             print("Database Connected");
         }
         
-        let createTB = "CREATE TABLE IF NOT EXISTS userTB(name TEXT, email TEXT PRIMARY KEY, password TEXT, course TEXT,sem INTEGER, dob TEXT)";
-        var createSTMT:OpaquePointer? = nil;
+        let createTB = "CREATE TABLE IF NOT EXISTS \(tableName)(name TEXT, email TEXT PRIMARY KEY, password TEXT, course TEXT, sem INTEGER, dob TEXT)";
+        var createSTMT:OpaquePointer?=nil;
         
-//        if(sqlite3_prepare_v2(db_pointer, createTB, -1, createSTMT, nil) == SQLITE_DONE){
-//            if()
-//        }
-//        else{
-//            print("Error in Statement");
-//        }
+        if(sqlite3_prepare_v2(db_pointer, createTB, -1, &createSTMT, nil) == SQLITE_OK){
+            if(sqlite3_step(createSTMT) == SQLITE_DONE){
+                print("Table Created");
+            }
+            else{
+                print("Error in Table Creation");
+            }
+        }
+        else{
+            print("Error in Statement");
+        }
 
+        sqlite3_finalize(createSTMT);
+        
+        let dirpath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true);
+        print("File Path : \(dirpath[0])")
     }
     
+    @IBOutlet weak var datepicker: UIDatePicker!
+    @IBAction func ondatepickerchanged(_ sender: Any) {
+        let DOB = DateFormatter();
+        
+        DOB.dateStyle = DateFormatter.Style.long;
+        DOB.dateFormat = "dd/MM/yyyy"
+        
+        selectedDOB = DOB.string(from: datepicker.date)
+    }
     
     @IBOutlet weak var namelbl: UITextField!
     @IBOutlet weak var emaillbl: UITextField!
@@ -67,5 +89,28 @@ class Q5: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource  {
     @IBOutlet weak var semlbl: UITextField!
     
     @IBAction func registerClick(_ sender: Any) {
+        let InsertRecord = "INSERT INTO \(tableName) values('\(namelbl.text!)','\(emaillbl.text!)','\(pwdlbl.text!)','\(selectedCourse)',\(semlbl.text!),'\(selectedDOB)')";
+        var InsertRecordSTMT:OpaquePointer? = nil;
+        
+        print("Query : \(InsertRecord)")
+        
+        if(sqlite3_prepare_v2(db_pointer, InsertRecord, -1, &InsertRecordSTMT, nil) == SQLITE_OK){
+            if(sqlite3_step(InsertRecordSTMT) == SQLITE_DONE){
+                print("Data Inserted");
+                
+                namelbl.text = "";
+                emaillbl.text = "";
+                pwdlbl.text = "";
+                semlbl.text = "";
+            }
+            else{
+                print("Error in data insertion");
+            }
+        }
+        else{
+            print("Error in Insert Statement");
+        }
+        
+        sqlite3_finalize(InsertRecordSTMT);
     }
 }
