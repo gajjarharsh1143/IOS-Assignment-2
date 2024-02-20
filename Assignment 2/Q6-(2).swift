@@ -8,10 +8,11 @@
 import UIKit
 import SQLite3
 
+@available(iOS 16.0, *)
 class Q6__2_: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
     
     let db_Path: String = "myDB.sqlit";
-    let db_pointer: OpaquePointer? = nil
+    var db_pointer: OpaquePointer? = nil
     
     let deptList:[String] = ["IT","HR","R & D","Sales"];
     var selectedDept: String = "";
@@ -33,9 +34,39 @@ class Q6__2_: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
         selectedDept = deptList[pickerView.selectedRow(inComponent: 0)]
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let file_path = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appending(path: db_Path);
+        
+        if(sqlite3_open(file_path.path, &db_pointer) != SQLITE_OK){
+            print("Error in Database connection");
+        }
+        else{
+            print("Error in Database connection");
+        }
 
+        let createTB = "CREATE TABLE IF NOT EXISTS empTB(empid INTEGER PRIMARY KEY, name TEXT, dept TEXT, DOJ TEXT)";
+        
+        var createTBSTMT: OpaquePointer? = nil;
+        
+        if(sqlite3_prepare_v2(db_pointer, createTB, -1, &createTBSTMT, nil) == SQLITE_OK){
+            if(sqlite3_step(createTBSTMT) == SQLITE_DONE){
+                print("Table Created")
+            }
+            else{
+                print("Error in Table creation");
+            }
+        }
+        else{
+            print("Error in create TB statement");
+        }
+        
+        sqlite3_finalize(createTBSTMT);
+        
+        let dirpath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true);
+        print("File Path : \(dirpath[0])")
     }
     
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -58,6 +89,9 @@ class Q6__2_: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
         if(sqlite3_prepare_v2(db_pointer, InsertEmp, -1, &insertEmpSTMT, nil) == SQLITE_OK){
             if(sqlite3_step(insertEmpSTMT) == SQLITE_DONE){
                 print("Record Inserted of (\(namelbl.text!)) in \(selectedDept) Department.");
+                let S2obj = self.storyboard?.instantiateViewController(identifier: "S1") as! Q6__1_
+                        
+                        self.present(S2obj, animated: true)
             }
             else{
                 print("Error in Record insertion");
@@ -66,5 +100,7 @@ class Q6__2_: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
         else{
             print("Error in prepare statement");
         }
+        
+        sqlite3_finalize(insertEmpSTMT);
     }
 }
