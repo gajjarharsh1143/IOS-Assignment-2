@@ -816,11 +816,23 @@
                                     <segue destination="UQx-k1-jEe" kind="show" id="Vyy-zL-21F"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TYq-2V-JR9">
+                                <rect key="frame" x="20" y="214" width="374" height="648"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KnL-aX-SlY" id="Woa-op-8Wl"/>
+                                    <outlet property="delegate" destination="KnL-aX-SlY" id="YIg-ia-Jxb"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a3v-zi-kyQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Question 6" id="3JZ-WI-UnB"/>
+                    <connections>
+                        <outlet property="tableViewObj" destination="TYq-2V-JR9" id="INo-d3-Avk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIc-7Z-UiR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
